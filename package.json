@@ -1,0 +1,8 @@
+{
+  "name": "string",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/paulo9mv/string.git",
+  "author": "Paulo Viana <paulo9mv@yahoo.com.br>",
+  "license": "MIT"
+}
