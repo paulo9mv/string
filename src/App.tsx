@@ -14,6 +14,19 @@ function App() {
   }
 
 
+  const changeToAlternate = (value: string, alternate: boolean) => {
+    const a  =[];
+
+    for (var i = 0; i < value.length; i++) {
+      if (i % 2 === 0) {
+        a.push(alternate ? value[i].toLowerCase() : value[i].toUpperCase())
+      } else {
+        a.push(alternate ? value[i].toUpperCase() : value[i].toLowerCase())
+      }
+    }
+
+    return a.join('');
+  }
 
   return (
     <div className="App">
@@ -29,14 +42,12 @@ function App() {
         <p>
           Your text in upper case: {changeToUpper(inputed)}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          Your text in alternated lower first case: {changeToAlternate(inputed, true)}
+        </p>
+        <p>
+          Your text in alternated upper first case: {changeToAlternate(inputed, false)}
+        </p>
       </header>
     </div>
   );
