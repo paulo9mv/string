@@ -9,6 +9,11 @@ function App() {
     return value.toLowerCase();
   }
 
+  const changeToUpper = (value: string) => {
+    return value.toUpperCase();
+  }
+
+
 
   return (
     <div className="App">
@@ -22,7 +27,7 @@ function App() {
           Your text in lower case: {changeToLow(inputed)}
         </p>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Your text in lower case: {changeToUpper(inputed)}
         </p>
         <a
           className="App-link"
