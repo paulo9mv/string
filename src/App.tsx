@@ -27,7 +27,7 @@ function App() {
           Your text in lower case: {changeToLow(inputed)}
         </p>
         <p>
-          Your text in lower case: {changeToUpper(inputed)}
+          Your text in upper case: {changeToUpper(inputed)}
         </p>
         <a
           className="App-link"
