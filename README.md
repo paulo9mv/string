@@ -15,3 +15,4 @@ Ex: `Hello Let's play LoL` => `hello let's play lol`
 Other ideas in development
 
 teste1
+teste2
