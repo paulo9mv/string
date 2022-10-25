@@ -13,6 +13,11 @@ function App() {
     return value.toUpperCase();
   }
 
+  const reverseString = (value: string) => {
+    return value.split("").reverse().join("");
+  }
+
+
 
   const changeToAlternate = (value: string, alternate: boolean) => {
     const a  =[];
@@ -47,6 +52,9 @@ function App() {
         </p>
         <p>
           Your text in alternated upper first case: {changeToAlternate(inputed, false)}
+        </p>
+        <p>
+          Your text reversed: {reverseString(inputed)}
         </p>
       </header>
     </div>
