@@ -50,6 +50,26 @@ function App() {
     return text
   }
 
+  const repeatedLetters = (value: string) => {
+    let text = ""
+    let previous = ""
+    const stringToArray = value.split("")
+
+    for(let letter of stringToArray) {
+      if (letter === " ") {
+        text += previous
+        text += previous
+      }
+      text += letter
+      previous = letter
+    }
+
+    text += previous
+    text += previous
+
+    return text
+  }
+
   const changeToAlternate = (value: string, alternate: boolean) => {
     const a  =[];
 
@@ -92,6 +112,9 @@ function App() {
         </p>
         <p style={{"whiteSpace":"pre"}}>    
           Your text with an extra space per letter: {addExtraSpace(inputed)}    
+        </p>
+        <p>
+          Your text in final letters repeated 3 times: {repeatedLetters(inputed)}
         </p>
       </header>
     </div>
