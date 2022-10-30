@@ -10,10 +10,3 @@ Ex: `Hello Let's play LoL` => `HeLlo LeT's PlAy LoL`
 
 3- Convert string to low caps
 Ex: `Hello Let's play LoL` => `hello let's play lol`
-
-### Other ideas
-Other ideas in development
-
-teste1
-teste2
-teste3
