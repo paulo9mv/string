@@ -37,7 +37,18 @@ function App() {
     })
   }
 
+  const addExtraSpace = (value: string) => {
+    let text = ""
+    const stringToArray = value.split("")
 
+
+    for(let letter of stringToArray) {
+      text += letter
+      text += " "
+    }
+
+    return text
+  }
 
   const changeToAlternate = (value: string, alternate: boolean) => {
     const a  =[];
@@ -78,6 +89,9 @@ function App() {
         </p>
         <p>
           Your text in letters converted to numbers: {textToNumbers(inputed)}
+        </p>
+        <p style={{"whiteSpace":"pre"}}>    
+          Your text with an extra space per letter: {addExtraSpace(inputed)}    
         </p>
       </header>
     </div>
