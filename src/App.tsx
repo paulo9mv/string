@@ -17,6 +17,26 @@ function App() {
     return value.split("").reverse().join("");
   }
 
+  const textToNumbers = (value: string) => {
+    const mapping = {
+      'i': '1',
+      'I': '1',
+      'o': '0',
+      'O': '0',
+      'a': '4',
+      'A': '4',
+      'e': '3',
+      'E': '3'
+    } as any
+
+    return value.split("").map(item => {
+      if (mapping[item]) {
+        return mapping[item];
+      }
+      else return item
+    })
+  }
+
 
 
   const changeToAlternate = (value: string, alternate: boolean) => {
@@ -55,6 +75,9 @@ function App() {
         </p>
         <p>
           Your text reversed: {reverseString(inputed)}
+        </p>
+        <p>
+          Your text in letters converted to numbers: {textToNumbers(inputed)}
         </p>
       </header>
     </div>
